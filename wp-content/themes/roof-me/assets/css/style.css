@@ -843,13 +843,6 @@ section {
   color: #47b2e4;
 }
 
-@media (min-width: 700px) {
-  .services .container .row{
-    border: 3px solid red;
-    display: inline-block;
-  }
-  }
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1563,14 +1556,12 @@ text-decoration-line: underline;
 }
 
 .carousel-control-prev-icon{
-  position: absolute;
   left: 0em;
   width: 4em;
   height: 4em;
 }
 
 .carousel-control-next-icon{
-  position: absolute;
   right: 0em;
   width: 4em;
   height: 4em;

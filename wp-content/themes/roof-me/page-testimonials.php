@@ -57,8 +57,9 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
-          </section><!-- <div class="portfolio-info">
-            <h3>Project information</h3>
+          </section>
+          <div class="portfolio-info">
+            <!-- <h3>Project information</h3>
             <ul>
               <li><strong>Category</strong>: Web design</li>
               <li><strong>Client</strong>: ASU Company</li>

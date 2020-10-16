@@ -6,17 +6,17 @@
 
     $args = array(
         'public'    => true,
-        'label'     => 'Services',
-        'menu_icon' => 'dashicons-images-alt2',
-    );
-    register_post_type( 'service', $args );
-
-    $args = array(
-        'public'    => true,
         'label'     => 'Hero',
         'menu_icon' => 'dashicons-universal-access-alt',
     );
     register_post_type( 'hero', $args );
+
+    $args = array(
+        'public'    => true,
+        'label'     => 'About',
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+    );
+    register_post_type( 'about', $args );
 
     function add_class_to_li( $classes, $item, $args ) {
 
