@@ -1,8 +1,16 @@
 <?php
    function register_resource() {
-   register_nav_menu('header-menu',__( 'Header Menu' ));
+    register_nav_menu('header-menu',__( 'Header Menu' )
+    );
    }
    add_action( 'init', 'register_resource' );
+
+   $args = array(
+    'public'    => true,
+    'label'     => 'Services',
+    'menu_icon' => 'dashicons-universal-access-alt',
+);
+register_post_type( 'services', $args );
 
     $args = array(
         'public'    => true,

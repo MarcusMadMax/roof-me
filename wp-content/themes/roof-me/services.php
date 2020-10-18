@@ -14,7 +14,7 @@
                     build, extension or garage. As metal long run specialists, we’ll help you choose the right roofing
                     solution to suit your property.
                 </p>
-                <a href="new-roofing.html">Learn More
+                <a href="<?php the_permalink()?>">Learn More
                     <i class="fas fa-chevron-circle-right"></i>
                 </a>
             </div>
