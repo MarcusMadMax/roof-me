@@ -7,7 +7,7 @@
                 solution to suit your property.
             </p>
             <a href="<?php the_permalink()?>">Learn More
-                <i class="fas fa-chevron-circle-right"></i>
+                <!-- <i class="fas fa-chevron-circle-right"></i> -->
             </a>
         </div>
     </div>

@@ -1,18 +1,32 @@
-<?php
-    $args = array('post_type' => 'service');
-    //Get data (services) from database
-    // The Query
-    $the_query = new WP_Query( $args );
-    
-    // The Loop
-        while ( $the_query->have_posts() ) {
-            $the_query->the_post();
-            get_template_part('partials/content','service');
-        }
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
 
-    /* Restore original Post Data */
-    wp_reset_postdata();
+    <div class="section-title">
+        <h2>Services</h2>
+    </div>
 
-    //render each service using template
+    <div class="row content">
+        <div class="col-lg-6  new-roofing">
+        <h3>New Roofing</h3>
+        <p>
+            The right choice in roofing can make all the difference to the performance and protection of your new
+            build, extension or garage. As metal long run specialists, we’ll help you choose the right roofing
+            solution to suit your property.
+        </p>
+        <a href="new-roofing.html">Learn More
+            <i class="fas fa-chevron-circle-right"></i>
+        </a>
+        </div>
 
-?>
+        <div class="col-lg-6  re-roofing">
+        <h3>Re-Roofing</h3>
+        <p>
+            Re-Roofing not only improves the aesthetics of your home, but also ensures it remains healthy, dry and
+            warm for years to come. We’re specialists in residential metal re-roofing, using only
+            high-quality products from COLORSTEEL® and ColorCote®.
+        </p>
+        <a href="re-roofing.html">Learn More
+            <i class="fas fa-chevron-circle-right"></i>
+        </a>
+        </div>
+</section>

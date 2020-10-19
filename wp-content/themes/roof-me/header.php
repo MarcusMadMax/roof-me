@@ -30,23 +30,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
-
-      <!-- <h1 class="logo mr-auto"><a href="index.html">Arsha</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo mr-auto"><img src="<?php echo get_template_directory_uri()?>/assets/img/rmlogo-1.png" alt="" class="img-fluid"></a>
-
       <nav class="nav-menu d-none d-lg-block">
-        <!-- <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="new-roofing.html">New Roofing</a></li>
-          <li><a href="re-roofing.html">Re- Roofing</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul> -->
+
         <?php wp_nav_menu( array( 
-              'theme_location' => 'main-menu',
+              'theme_location' => 'header-menu',
               'container' => 'ul',
-            )); ?>
+            ));
+        ?>
+
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->

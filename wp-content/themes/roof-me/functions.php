@@ -8,7 +8,7 @@
    $args = array(
     'public'    => true,
     'label'     => 'Services',
-    'menu_icon' => 'dashicons-universal-access-alt',
+    'menu_icon' => 'dashicons-hammer',
 );
 register_post_type( 'services', $args );
 

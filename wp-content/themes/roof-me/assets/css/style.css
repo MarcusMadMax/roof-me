@@ -1620,6 +1620,7 @@ text-decoration-line: underline;
 #footer {
   background: rgb(45, 49, 55);
   margin: 0 auto;
+
   display: flex;
   justify-content: space-around;
 }
