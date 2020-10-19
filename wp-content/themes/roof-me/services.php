@@ -1,23 +1,34 @@
-<!-- ======= About Us Section ======= -->
-<section id="about" class="about">
-    <div class="container" data-aos="fade-up">
+<?php get_header()?>
+      
+      <!-- ======= Service Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-            <h2><?php the_field('new_roof_title')?></h2>
+          <div class="section-title">
+            <h2>Services</h2>
+          </div>
+
+          <div class="row content">
+
+            <?php
+                $args = array('post_type' => 'services');
+                //Get data (services) from database
+                // The Query
+                $the_query = new WP_Query( $args );
+
+                // The Loop
+                    while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                        get_template_part('partials/content','services');
+                    }
+
+                /* Restore original Post Data */
+                wp_reset_postdata();
+
+            ?>
+
+          </div>
         </div>
-        <div class="row content">
-            <div class="col-lg-6  new-roofing">
-                <h3>New Roofing</h3>
-                <p>
-                    The right choice in roofing can make all the difference to the performance and protection of your new
-                    build, extension or garage. As metal long run specialists, we’ll help you choose the right roofing
-                    solution to suit your property.
-                </p>
-                <a href="<?php the_permalink()?>">Learn More
-                    <i class="fas fa-chevron-circle-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End About Us Section -->
+    </section><!-- End Service Section -->
+    
+<?php get_footer()?>
