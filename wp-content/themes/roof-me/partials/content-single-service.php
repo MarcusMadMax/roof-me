@@ -1,3 +1,7 @@
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
       <div class="section-title">
         <h2><?php the_field('services_header')?></h2>
         <h4><?php the_field('services_sub_header')?></h4>
@@ -18,30 +22,30 @@
   <div class="row justify-content-center">
     <div class="col-md-9">
       <div class="row">
-        <a href="assets/img/roof-me1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me1.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me2.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me3.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me4.png" class="img-fluid">
         </a>
       </div>
       <div class="row">
-        <a href="assets/img/roof-me5.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me5.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me5.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me6.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me6.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me6.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me7.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me7.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me7.png" class="img-fluid">
         </a>
-        <a href="assets/img/roof-me8.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-3">
+        <a href="assets/img/roof-me8.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-3">
           <img src="<?php echo get_template_directory_uri()?>/assets/img/roof-me8.png" class="img-fluid">
         </a>
       </div>
@@ -65,7 +69,7 @@
       </div>
 
       <div class="row">
-        <div class="mb-4 col-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">CORRUGATE</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/corrugate.gif" alt="">
@@ -74,7 +78,7 @@
           </div>
         </div>
 
-        <div class="mb-4 col-4 " data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">MULTIDEK®</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/multidek1.jpg" alt="">
@@ -84,7 +88,7 @@
           </div>
         </div>
 
-        <div class="mb-4 col-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">MULTIRIB®</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/multirib.jpg" alt="">
@@ -93,7 +97,7 @@
           </div>
         </div>
 
-        <div class="mb-4 col-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">RIBLINE® 800</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/ribline.jpg" alt="">
@@ -102,7 +106,7 @@
           </div>
         </div>
 
-        <div class="mb-4 col-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">RT7®</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/RT7.jpg" alt="">
@@ -112,7 +116,7 @@
           </div>
         </div>
 
-        <div class="mb-4 col-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="mb-4 col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
           <div class="icon-box">
             <h4><a href="">TRIMRIB®</a></h4>
             <img src="<?php echo get_template_directory_uri()?>/assets/img/corrugated-roofing/trimrib.jpg" alt="">
@@ -125,42 +129,127 @@
 
     </div>
   </section><!-- End Services Section -->
-  <main id="main">
-    <!--End Service Section-->
+<main id="main">
+  <!--End Service Section-->
 
-    <!-- ======= Cliens Section ======= -->
-    <section id="cliens" class="cliens section-bg">
-      <div class="container">
+  <!-- ======= Color ======= -->
+  <section class="colorsteel">
+    <div class="row">
 
-        <div class="row" data-aos="zoom-in">
+      <!-- Grid column -->
+      <div class="col-md-12 d-flex justify-content-center mb-5">
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/colorcote2.gif" class="img-fluid" alt="">
-          </div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-endura"
+                  role="tab" aria-controls="pills-endura" aria-selected="true">COLOURSTEEL® Endura®</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-maxx" role="tab"
+                  aria-controls="pills-maxx" aria-selected="false">COLOURSTEEL® Maxx®</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-metallic" role="tab"
+                  aria-controls="pills-metallic" aria-selected="false">COLOURSTEEL® Metalic®</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-bounce" role="tab"
+                  aria-controls="pills-bounce" aria-selected="false">COLOURSTEEL® Bounce®</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-new" role="tab"
+                  aria-controls="pills-new" aria-selected="false">COLOURSTEEL® New®</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-vibrant" role="tab"
+                  aria-controls="pills-vibrant" aria-selected="false">COLOURSTEEL® vibrant®</a>
+          </li>
+        </ul>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/colorsteel.gif" class="img-fluid" alt="">
-          </div>
+      </div>
+    
+    </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/Hazard-Co.gif" class="img-fluid" alt="">
-          </div>
+    <!-- Grid row -->
+    <div class="gallery tab-content" id="gallery pills-tabContent">
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/konnect.gif" class="img-fluid" alt="">
-          </div>
+      <!-- Grid column -->
+      <div class="mb-3 pics animation 1 tab-pane fade show active" id="pills-endura" role="tabpanel"
+          aria-labelledby="pills-endura-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL.gif" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/nzsteel1.gif" class="img-fluid" alt="">
-          </div>
+      <!-- Grid column -->
+      <div class="mb-3 pics animation  2tab-pane fade" id="pills-maxx" role="tabpanel"
+          aria-labelledby="pills-maxx-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-MAXX.gif" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/roofingindustries.jpg" class="img-fluid" alt="">
-          </div>
+      <!-- Grid column -->
+      <div class="mb-3 pics animation  3tab-pane fade" id="pills-metallic" role="tabpanel"
+          aria-labelledby="pills-metallic-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-METALIC.gif" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
 
+      <!-- Grid column -->
+      <div class="mb-3 pics animation  4tab-pane fade" id="pills-bounce" role="tabpanel"
+          aria-labelledby="pills-bounce-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-BOUNCE.gif" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="mb-3 pics animation  4tab-pane fade" id="pills-new" role="tabpanel"
+          aria-labelledby="pills-new-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-NEW.jpg" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
+
+      <div class="mb-3 pics animation  4tab-pane fade" id="pills-vibrant" role="tabpanel"
+          aria-labelledby="pills-vibrant-tab">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-VIBRANT.jpg" alt="Card image cap">
+      </div>
+      <!-- Grid column -->
+
+    </div>
+  </section>
+
+  <!-- ======= Cliens Section ======= -->
+  <section id="cliens" class="cliens section-bg">
+    <div class="container">
+
+      <div class="row" data-aos="zoom-in">
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/colorcote2.gif" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/colorsteel.gif" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/Hazard-Co.gif" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/konnect.gif" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/nzsteel1.gif" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="<?php echo get_template_directory_uri()?>/assets/img/logos/roofingindustries.jpg" class="img-fluid" alt="">
         </div>
 
       </div>
-    </section><!-- End Cliens Section -->
 
-  </main><!-- End #main -->
+    </div>
+  </section><!-- End Cliens Section -->
+
+</main><!-- End #main -->
