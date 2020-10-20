@@ -785,6 +785,7 @@ section {
 
 .nav-pills .nav-link.active{
   background-color: #777777;
+  border-radius: .25em;
 }
 
 .nav-pills .nav-link:hover{
@@ -829,8 +830,13 @@ a{
   }
 
   .colorsteel .nav-item{
-    border-radius: .15em;
+    border-radius: .5em .5em 0 0 ;
     border-bottom: 2px solid rgba(60, 60, 60, .5);
+    margin: 1em 0;
+  }
+
+  .nav-pills .nav-link.active{
+    border-radius: .5em .5em 0 0;
   }
 }
 

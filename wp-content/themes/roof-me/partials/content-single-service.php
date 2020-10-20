@@ -138,81 +138,44 @@
 
       <!-- Grid column -->
       <div class="col-md-12 d-flex justify-content-center mb-5">
-
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item">
+
+            <?php
+              $terms = get_terms( 'type', array('hide_empty' => false));
+              foreach($terms as $term){
+                  echo '<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-endura"
+                  role="tab" aria-controls="pills-endura" aria-selected="true" data-filter=".'.$term->slug.'">'.$term->name.'</a>';
+              }
+              //here we filter the terms (tabs on top)
+            ?>
+<!-- 
               <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-endura"
-                  role="tab" aria-controls="pills-endura" aria-selected="true">COLOURSTEEL® Endura®</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-maxx" role="tab"
-                  aria-controls="pills-maxx" aria-selected="false">COLOURSTEEL® Maxx®</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-metallic" role="tab"
-                  aria-controls="pills-metallic" aria-selected="false">COLOURSTEEL® Metalic®</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-bounce" role="tab"
-                  aria-controls="pills-bounce" aria-selected="false">COLOURSTEEL® Bounce®</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-new" role="tab"
-                  aria-controls="pills-new" aria-selected="false">COLOURSTEEL® New®</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-vibrant" role="tab"
-                  aria-controls="pills-vibrant" aria-selected="false">COLOURSTEEL® vibrant®</a>
+                  role="tab" aria-controls="pills-endura" aria-selected="true">COLOURSTEEL® Endura®</a> -->
           </li>
         </ul>
-
       </div>
-    
     </div>
 
     <!-- Grid row -->
     <div class="gallery tab-content" id="gallery pills-tabContent">
 
-      <!-- Grid column -->
-      <div class="mb-3 pics animation 1 tab-pane fade show active" id="pills-endura" role="tabpanel"
-          aria-labelledby="pills-endura-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL.gif" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
+      <?php
 
-      <!-- Grid column -->
-      <div class="mb-3 pics animation  2tab-pane fade" id="pills-maxx" role="tabpanel"
-          aria-labelledby="pills-maxx-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-MAXX.gif" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
+        $args = array('post_type' => 'Project');
+        // The Query
+        $the_query = new WP_Query( $args );
 
-      <!-- Grid column -->
-      <div class="mb-3 pics animation  3tab-pane fade" id="pills-metallic" role="tabpanel"
-          aria-labelledby="pills-metallic-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-METALIC.gif" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
+        // The Loop
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            get_template_part('partials/content', 'project');
+        }
 
-      <!-- Grid column -->
-      <div class="mb-3 pics animation  4tab-pane fade" id="pills-bounce" role="tabpanel"
-          aria-labelledby="pills-bounce-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-BOUNCE.gif" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
+        /* Restore original Post Data */
+        wp_reset_postdata();
 
-      <!-- Grid column -->
-      <div class="mb-3 pics animation  4tab-pane fade" id="pills-new" role="tabpanel"
-          aria-labelledby="pills-new-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-NEW.jpg" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
-
-      <div class="mb-3 pics animation  4tab-pane fade" id="pills-vibrant" role="tabpanel"
-          aria-labelledby="pills-vibrant-tab">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri()?>/assets/img/COLOURSTEEL-VIBRANT.jpg" alt="Card image cap">
-      </div>
-      <!-- Grid column -->
+      ?>
 
     </div>
   </section>
