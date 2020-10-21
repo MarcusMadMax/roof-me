@@ -9,8 +9,8 @@
     <div class="row content">
 
       <?php
-          $args = array('post_type' => 'services');
           //Get data (services) from database
+          $args = array('post_type' => 'services');
           // The Query
           $the_query = new WP_Query( $args );
 
