@@ -1,3 +1,4 @@
+<?php get_header()?>  
   <!-- ======= About Us Section ======= -->
   <section id="about" class="about">
     <div class="container" data-aos="fade-up">
@@ -137,17 +138,19 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-12 d-flex justify-content-center mb-5">          
-
-            <?php
-              $terms = get_terms( 'type', array('hide_empty' => false));
-              foreach($terms as $term){
-                  echo '<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-endura"
-                  role="tab" aria-controls="pills-endura" aria-selected="true" data-filter=".'.$term->slug.'">'.$term->name.'</a></li></ul>';
+      <div class="col-md-12 d-flex justify-content-center mb-5">    
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <?php
+            $terms = get_terms( 'type', array('hide_empty' => false));
+            foreach($terms as $term){
+              echo '<li class="nav-item">
+                      <a class="nav-link" id="pills-home-tab" data-toggle="tab" href="#pills-endura"
+                      role="tab" aria-controls="pills-endura" aria-selected="true" data-filter=".'.$term->slug.'">'.$term->name.'</a>
+                    </li>';
               }
-              
-            ?>
+            
+          ?>
+        </ul>
       </div>
     </div>
 
@@ -210,3 +213,4 @@
   </section><!-- End Cliens Section -->
 
 </main><!-- End #main -->
+<?php get_footer()?>

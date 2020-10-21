@@ -756,7 +756,6 @@ section {
 .colorsteel .btn{
   background-color: #47b2e4;
   color: white;
-  margin: 1em;
   border-bottom: 2px solid rgba(60, 60, 60, 1);
 }
 
@@ -832,7 +831,6 @@ a{
   .colorsteel .nav-item{
     border-radius: .5em .5em 0 0 ;
     border-bottom: 2px solid rgba(60, 60, 60, .5);
-    margin: 1em 0;
   }
 
   .nav-pills .nav-link.active{
